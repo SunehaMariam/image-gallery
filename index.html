@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Image Gallery</title>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="searchBox" placeholder="Search items..." />
+    <button onclick="searchItems()">
+      <img src="./icons8-search-50.png" alt="search icon" />
+    </button>
+
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('phone')">Phone</button>
+    <button onclick="filterItems('shoes')">Shoes</button>
+    <button onclick="filterItems('cloth')">Cloth</button>
+  </div>
+
+  <div class="boxes">
+    <!-- Phones -->
+    <div class="boxBody phone">
+      <h1>iPhone 12 – 64GB</h1>
+      <img src="./assets/images/phone-1.jpg" />
+      <p>Budget smartphone – Rs. 12,000</p>
+    </div>
+    <div class="boxBody phone">
+      <h1>Samsung Galaxy A32</h1>
+      <img src="./assets/images/phone-2.jpg" />
+      <p>HD Display, Dual Camera – Rs. 14,500</p>
+    </div>
+    <div class="boxBody phone">
+      <h1>OnePlus Nord CE 2</h1>
+      <img src="./assets/images/phone-3.jpg" />
+      <p>Fast Processor, 5G – Rs. 18,000</p>
+    </div>
+    <div class="boxBody phone">
+      <h1>Xiaomi Redmi Note 11</h1>
+      <img src="./assets/images/phone-4.jpg" />
+      <p>Best Seller – Rs. 20,000</p>
+    </div>
+
+    <!-- Shoes -->
+    <div class="boxBody shoes">
+      <h1>Nike Air Zoom Pegasus</h1>
+      <img src="./assets/images/shoe-1.jpg" />
+      <p>Running Shoes – Rs. 2,000</p>
+    </div>
+    <div class="boxBody shoes">
+      <h1>Adidas Casual Sneakers</h1>
+      <img src="./assets/images/shoe-2.jpg" />
+      <p>Casual Wear – Rs. 1,800</p>
+    </div>
+    <div class="boxBody shoes">
+      <h1>Formal Leather Shoe</h1>
+      <img src="./assets/images/shoe-3.jpg" />
+      <p>Formal Shoes – Rs. 2,500</p>
+    </div>
+    <div class="boxBody shoes">
+      <h1>Puma Sports Shoes</h1>
+      <img src="./assets/images/shoes-4.jpg" />
+      <p>Stylish Sneakers – Rs. 3,200</p>
+    </div>
+
+    <!-- Cloth -->
+    <div class="boxBody cloth">
+      <h1>White Cotton Shirt</h1>
+      <img src="./assets/images/cloth-1.jpg" />
+      <p>Cotton Shirt – Rs. 900</p>
+    </div>
+    <div class="boxBody cloth">
+      <h1>Classic Denim Jacket</h1>
+      <img src="./assets/images/cloth-2.jpg" />
+      <p>Denim Jacket – Rs. 1,500</p>
+    </div>
+    <div class="boxBody cloth">
+      <h1>Winter Hoodie</h1>
+      <img src="./assets/images/cloth-3.jpg" />
+      <p>Winter Hoodie – Rs. 2,200</p>
+    </div>
+    <div class="boxBody cloth">
+      <h1>Sweater</h1>
+      <img src="./assets/images/cloth-4.jpg" />
+      <p>Sweater – Rs. 500</p>
+    </div>
+    <div class="boxBody cloth">
+      <h1>SweatShirt</h1>
+      <img src="./assets/images/cloth-5.jpg" />
+      <p>Sweat Shirt – Rs. 1,200</p>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
